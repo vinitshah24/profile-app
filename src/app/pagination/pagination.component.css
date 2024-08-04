@@ -1,0 +1,8 @@
+li.disabled > a {
+    background-color: rgb(243, 239, 239);
+}
+
+li.active > a {
+    background-color: #754ef9;
+    border-color: transparent;
+}

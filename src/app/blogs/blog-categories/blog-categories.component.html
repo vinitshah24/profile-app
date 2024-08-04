@@ -1,0 +1,10 @@
+<div class="sidebar-category mt-50">
+    <h4 class="sidebar-title pb-10">Catagories</h4>
+    <ul *ngFor="let category of categories | keyvalue">
+        <li>
+            <a [routerLink]="['/blogs', 'categories', category.key]">{{ category.key | titlecase }}
+                <span>({{ category.value }})</span>
+            </a>
+        </li>
+    </ul>
+</div>

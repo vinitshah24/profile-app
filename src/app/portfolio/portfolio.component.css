@@ -1,0 +1,161 @@
+/*===========================
+        5.WORK css
+===========================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .work-area {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .work-area {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+.single-work {
+    position: relative;
+}
+
+.single-work .work-image img {
+    width: 100%;
+}
+
+.single-work .work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(117, 78, 249, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.single-work .work-overlay .work-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.single-work .work-overlay .work-content .work-title {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 60;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    margin-bottom: 15px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
+
+.single-work .work-overlay .work-content ul {
+    position: relative;
+    padding-top: 20px;
+}
+
+.single-work .work-overlay .work-content ul::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.single-work .work-overlay .work-content ul li {
+    display: inline-block;
+    margin: 0 15px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
+
+.single-work .work-overlay .work-content ul li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.single-work .work-overlay .work-content ul li a:hover {
+    background-color: #fff;
+    color: #754ef9;
+}
+
+.single-work .work-overlay .work-content ul li:nth-of-type(1) {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.single-work .work-overlay .work-content ul li:nth-of-type(2) {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.single-work:hover .work-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.single-work:hover .work-overlay .work-content .work-title {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.single-work:hover .work-overlay .work-content ul li {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}

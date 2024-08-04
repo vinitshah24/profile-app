@@ -1,0 +1,124 @@
+<section id="contact" class="contact-area pt-125 pb-130 gray-bg mt-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center pb-25">
+                    <h2 class="title">{{ contactConf.heading }}</h2>
+                    <p>{{ contactConf.description }}</p>
+                </div> <!-- section title -->
+            </div>
+        </div> <!-- row -->
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="contact-box text-center mt-30">
+                    <div class="contact-icon">
+                        <i class="lni-map-marker"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h6 class="contact-title">Address</h6>
+                        <p>{{ contactConf.address }}</p>
+                    </div>
+                </div> <!-- contact box -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="contact-box text-center mt-30">
+                    <div class="contact-icon">
+                        <i class="lni-phone"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h6 class="contact-title">Phone</h6>
+                        <p>{{ contactConf.phone }}</p>
+                    </div>
+                </div> <!-- contact box -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="contact-box text-center mt-30">
+                    <div class="contact-icon">
+                        <i class="lni-envelope"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h6 class="contact-title">Email</h6>
+                        <p>{{ contactConf.email }}</p>
+                    </div>
+                </div> <!-- contact box -->
+            </div>
+        </div> <!-- row -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contact-form pt-30">
+                    <form id="contact-form" [formGroup]="contactForm" (ngSubmit)="sendMessage(contactForm.value)">
+                        <div class="row">
+
+                            <div class="col single-form">
+                                <input type="text" formControlName="firstName" class="form-control input-txt"
+                                    placeholder="First Name" aria-label="First Name">
+                                <div *ngIf="contactForm.get('firstName')?.invalid &&
+                                    (contactForm.get('firstName')?.dirty || contactForm.get('firstName')?.touched)">
+                                    <small class="text-danger"
+                                        *ngIf="contactForm.get('firstName')?.hasError('required')">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col single-form">
+                                <input type="text" formControlName="lastName" class="form-control"
+                                    placeholder="Last Name" aria-label="Last Name">
+                                <div *ngIf="contactForm.get('lastName')?.invalid &&
+                                    (contactForm.get('lastName')?.dirty || contactForm.get('lastName')?.touched)">
+                                    <small class="text-danger"
+                                        *ngIf="contactForm.get('lastName')?.hasError('required')">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="single-form">
+                            <input type="email" formControlName="email" name="email" placeholder="Email"
+                                aria-label="Email">
+                            <div *ngIf="contactForm.get('email')?.invalid &&
+                                (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)">
+                                <small class="text-danger" *ngIf="contactForm.get('email')?.hasError('required')">
+                                    This field is required.
+                                </small>
+                                <small class="text-danger" *ngIf="contactForm.get('email')?.valid === false">
+                                    Please enter a valid email.
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="single-form">
+                            <textarea name="message" formControlName="message" placeholder="Message"
+                                aria-label="Message"></textarea>
+                            <div *ngIf="contactForm.get('message')?.invalid &&
+                                (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)">
+                                <small class="text-danger" *ngIf="contactForm.get('message')?.hasError('required')">
+                                    This field is required.
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="form-message"></p>
+
+                        <div class="single-form">
+                            <button [disabled]="contactForm.invalid" class="submit-btn" type="submit">
+                                Send Message</button>
+                        </div>
+
+                    </form>
+                </div> <!-- contact form -->
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-map mt-60">
+                    <div class="gmap_canvas">
+                        <iframe id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
+                </div> <!-- contact map -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>

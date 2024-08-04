@@ -1,0 +1,35 @@
+<header class="header-area">
+    <div class="page-banner bg_cover" style="background-image: url(../assets/images/post-banner.jpg)" data-overlay="2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-banner-content text-center">
+                        <h2 class="page-title">Blog Post</h2>
+                        <ul class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+                            <li class="breadcrumb-item">Blog Post</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="blog" class="single-blog-page pt-80 pb-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <app-blog></app-blog>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-sidebar">
+                    <app-search-blog></app-search-blog>
+                    <app-latest-blogs></app-latest-blogs>
+                    <app-blog-categories></app-blog-categories>
+                    <app-subscribe-blog></app-subscribe-blog>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

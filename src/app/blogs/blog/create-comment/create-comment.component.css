@@ -1,0 +1,51 @@
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input {
+    margin-top: 30px;
+}
+
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input input,
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input textarea {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ddd;
+    padding: 0 30px;
+    border-radius: 5px;
+}
+
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input input.placeholder,
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input textarea.placeholder {
+    opacity: 1;
+    color: #8a8fa3;
+}
+
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input input:-moz-placeholder,
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input textarea:-moz-placeholder {
+    opacity: 1;
+    color: #8a8fa3;
+}
+
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input input::-moz-placeholder,
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input textarea::-moz-placeholder {
+    opacity: 1;
+    color: #8a8fa3;
+}
+
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input input::-webkit-input-placeholder,
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input textarea::-webkit-input-placeholder {
+    opacity: 1;
+    color: #8a8fa3;
+}
+
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input input:focus,
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input textarea:focus {
+    border-color: #754ef9;
+}
+
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input textarea {
+    height: 160px;
+    padding-top: 20px;
+    resize: none;
+}
+
+.single-blog-post .blog-comment .comment-form .comment-form-box .single-input .main-btn {
+    width: 160px;
+}

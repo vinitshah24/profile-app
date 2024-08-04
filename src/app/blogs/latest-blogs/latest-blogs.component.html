@@ -1,0 +1,20 @@
+<div class="sidebar-post mt-50">
+    <h4 class="sidebar-title">Recent Post</h4>
+    <ul>
+        <li *ngFor="let blog of blogs">
+            <div class="single-sidebar-post d-flex">
+                <div class="post-thumb">
+                    <a [routerLink]="['/blogs', blog.id]">
+                        <img [src]="blog.thumbnail" class="post-thumbnail" alt="Post">
+                    </a>
+                </div>
+                <div class="post-content media-body">
+                    <h5 class="post-title">
+                        <a [routerLink]="['/blogs', blog.id]">{{ blog.title }}</a>
+                    </h5>
+                    <span><i class="lni-calendar"></i> {{ blog.publish_date | date: 'longDate' }}</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

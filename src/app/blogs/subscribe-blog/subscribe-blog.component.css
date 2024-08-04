@@ -1,0 +1,59 @@
+.blog-sidebar .sidebar-subscribe {
+    padding: 25px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.blog-sidebar .sidebar-subscribe .subscribe-form {
+    position: relative;
+}
+
+.blog-sidebar .sidebar-subscribe .subscribe-form input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    padding: 0 30px;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+}
+
+.blog-sidebar .sidebar-subscribe .subscribe-form input.placeholder {
+    opacity: 1;
+    color: #8a8fa3;
+}
+
+.blog-sidebar .sidebar-subscribe .subscribe-form input:-moz-placeholder {
+    opacity: 1;
+    color: #8a8fa3;
+}
+
+.blog-sidebar .sidebar-subscribe .subscribe-form input::-moz-placeholder {
+    opacity: 1;
+    color: #8a8fa3;
+}
+
+.blog-sidebar .sidebar-subscribe .subscribe-form input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #8a8fa3;
+}
+
+.blog-sidebar .sidebar-subscribe .subscribe-form input:focus {
+    border-color: #754ef9;
+}
+
+.blog-sidebar .sidebar-subscribe .subscribe-form button {
+    width: 65px;
+    height: 50px;
+    text-align: center;
+    background-color: #754ef9;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #754ef9;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 54px;
+    cursor: pointer;
+}

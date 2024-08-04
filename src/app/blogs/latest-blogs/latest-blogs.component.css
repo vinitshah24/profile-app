@@ -1,0 +1,59 @@
+.blog-sidebar .sidebar-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.blog-sidebar .sidebar-post {
+    padding: 25px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.blog-sidebar .sidebar-post .single-sidebar-post {
+    margin-top: 25px;
+}
+
+.blog-sidebar .sidebar-post .single-sidebar-post .post-thumb a img {
+    border-radius: 3px;
+}
+
+.blog-sidebar .sidebar-post .single-sidebar-post .post-content {
+    padding-left: 20px;
+}
+
+.blog-sidebar .sidebar-post .single-sidebar-post .post-content .post-title a {
+    line-height: 22px;
+    font-size: 15px;
+    color: #32333c;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+@media (max-width: 767px) {
+    .blog-sidebar .sidebar-post .single-sidebar-post .post-content .post-title a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .blog-sidebar .sidebar-post .single-sidebar-post .post-content .post-title a {
+        font-size: 15px;
+    }
+}
+
+.blog-sidebar .sidebar-post .single-sidebar-post .post-content .post-title a:hover {
+    color: #754ef9;
+}
+
+.blog-sidebar .sidebar-post .single-sidebar-post .post-content span {
+    color: #8a8fa3;
+    font-size: 14px;
+}
+
+.post-thumbnail {
+    height: 70px;
+    width: 68px;
+}

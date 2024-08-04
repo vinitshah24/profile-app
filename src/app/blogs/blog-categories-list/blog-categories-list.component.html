@@ -1,0 +1,41 @@
+<section id="blog-categories-list" class="blog-categories pt-80 pb-130 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="title">Search Results for {{ category | titlecase }}:</h2>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-8 col-sm-9" *ngFor="let blog of pages">
+                            <div class="single-blog mt-30">
+                                <div class="blog-image">
+                                    <img src="../../{{ blog.thumbnail }}" alt="Blog">
+                                </div>
+                                <div class="blog-content">
+                                    <h4 class="blog-title"><a [routerLink]="['/blogs', blog.id]">{{ blog.title }}</a>
+                                    </h4>
+                                    <span>{{ blog.publish_date | date: 'longDate' }} </span>
+                                </div>
+                            </div> <!-- single blog -->
+                        </div>
+                    </div> <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="blog-more text-center mt-50">
+                                <app-pagination [pager]="pagination"
+                                    (setCurrPage)="setPage($any($event))"></app-pagination>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-sidebar">
+                    <app-search-blog></app-search-blog>
+                    <app-latest-blogs></app-latest-blogs>
+                    <app-blog-categories></app-blog-categories>
+                    <app-subscribe-blog></app-subscribe-blog>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
