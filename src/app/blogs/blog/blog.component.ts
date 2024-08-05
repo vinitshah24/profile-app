@@ -1,15 +1,25 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BlogsService } from '../../services/blogs.service';
-import { CommonModule } from '@angular/common';
-import { CommentsComponent } from "./comments/comments.component";
-import { CreateCommentComponent } from "./create-comment/create-comment.component";
 import { Subscription } from 'rxjs';
+import { CommentsComponent } from './comments/comments.component';
+import { CreateCommentComponent } from './create-comment/create-comment.component';
+import { SidebarBlogsComponent } from '../sidebar-blogs/sidebar-blogs.component';
+import { SidebarSubscribeComponent } from '../sidebar-subscribe/sidebar-subscribe.component';
+import { SidebarCategoryComponent } from '../sidebar-category/sidebar-category.component';
+import { SidebarSearchComponent } from '../sidebar-search/sidebar-search.component';
 
 @Component({
-  selector: 'app-blog',
+  selector: 'app-blog-details',
   standalone: true,
   imports: [
+    RouterOutlet,
+    SidebarSubscribeComponent,
+    SidebarCategoryComponent,
+    SidebarBlogsComponent,
+    SidebarSearchComponent,
     CommonModule,
     CommentsComponent,
     CreateCommentComponent
@@ -17,7 +27,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
-export class BlogComponent implements OnInit, OnDestroy {
+export class BlogComponent {
 
   blog: {
     id: number,
@@ -36,7 +46,6 @@ export class BlogComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    console.log("Blog init!")
     this.getBlogResource()
   }
 
@@ -57,7 +66,6 @@ export class BlogComponent implements OnInit, OnDestroy {
   getBlogResource() {
     this.routeSub = this.activatedRoute.params.subscribe(params => {
       const blogId = +params['id'];
-      console.log(`Subscribed ID ${blogId}`)
       this.blog = this.getPostById(blogId);
     });
   }

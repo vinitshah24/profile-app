@@ -1,27 +1,27 @@
-.blog-sidebar .sidebar-title {
+.sidebar-title {
     font-size: 22px;
     font-weight: 600;
 }
 
-.blog-sidebar .sidebar-post {
+.sidebar-post {
     padding: 25px 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.blog-sidebar .sidebar-post .single-sidebar-post {
+.sidebar-post .single-sidebar-post {
     margin-top: 25px;
 }
 
-.blog-sidebar .sidebar-post .single-sidebar-post .post-thumb a img {
+.sidebar-post .single-sidebar-post .post-thumb a img {
     border-radius: 3px;
 }
 
-.blog-sidebar .sidebar-post .single-sidebar-post .post-content {
+.sidebar-post .single-sidebar-post .post-content {
     padding-left: 20px;
 }
 
-.blog-sidebar .sidebar-post .single-sidebar-post .post-content .post-title a {
+.sidebar-post .single-sidebar-post .post-content .post-title a {
     line-height: 22px;
     font-size: 15px;
     color: #32333c;
@@ -33,22 +33,22 @@
 }
 
 @media (max-width: 767px) {
-    .blog-sidebar .sidebar-post .single-sidebar-post .post-content .post-title a {
+    .sidebar-post .single-sidebar-post .post-content .post-title a {
         font-size: 14px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .blog-sidebar .sidebar-post .single-sidebar-post .post-content .post-title a {
+    .sidebar-post .single-sidebar-post .post-content .post-title a {
         font-size: 15px;
     }
 }
 
-.blog-sidebar .sidebar-post .single-sidebar-post .post-content .post-title a:hover {
+.sidebar-post .single-sidebar-post .post-content .post-title a:hover {
     color: #754ef9;
 }
 
-.blog-sidebar .sidebar-post .single-sidebar-post .post-content span {
+.sidebar-post .single-sidebar-post .post-content span {
     color: #8a8fa3;
     font-size: 14px;
 }

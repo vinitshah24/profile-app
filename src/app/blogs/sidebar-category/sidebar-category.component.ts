@@ -5,16 +5,16 @@ import { RouterLink } from '@angular/router';
 import { BlogsService } from '../../services/blogs.service';
 
 @Component({
-  selector: 'app-blog-categories',
+  selector: 'app-sidebar-category',
   standalone: true,
   imports: [
     CommonModule,
     RouterLink,
   ],
-  templateUrl: './blog-categories.component.html',
-  styleUrl: './blog-categories.component.css'
+  templateUrl: './sidebar-category.component.html',
+  styleUrl: './sidebar-category.component.css'
 })
-export class BlogCategoriesComponent {
+export class SidebarCategoryComponent {
 
   categories: { [key: string]: number }
 

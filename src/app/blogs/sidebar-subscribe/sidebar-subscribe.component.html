@@ -1,0 +1,24 @@
+<div class="sidebar-subscribe mt-50">
+    <h4 class="sidebar-title pb-10">Subscribe</h4>
+    <div class="subscribe-form mt-15">
+        <form id="subscription-form" [formGroup]="subscriptionForm" (ngSubmit)="subscribe(subscriptionForm.value)">
+            <div class="single-form">
+                <input type="email" formControlName="email" name="email" placeholder="Email" aria-label="Email">
+                <div class="ml-2 mt-2" *ngIf="subscriptionForm.get('email')?.invalid &&
+                    (subscriptionForm.get('email')?.dirty || subscriptionForm.get('email')?.touched)">
+                    <small class="text-danger" *ngIf="subscriptionForm.get('email')?.hasError('required')">
+                        This field is required.
+                    </small>
+                    <small class="text-danger" *ngIf="subscriptionForm.get('email')?.valid === false">
+                        Please enter a valid email.
+                    </small>
+                </div>
+            </div>
+            <button [disabled]="subscriptionForm.invalid" type="submit">
+                <i class="lni-angle-double-right"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<app-popup></app-popup>

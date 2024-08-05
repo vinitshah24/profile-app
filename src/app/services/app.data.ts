@@ -36,7 +36,7 @@ export const configuration = {
             mastering new technologies with a keen interest in researching and learning new industry developments and
             cloud technologies.`,
         email: "shahvinit2244@gmail.com",
-        phone: "+1-980-837-2229",
+        phone: "+1-980-837-2220",
         skills: [
             {
                 name: "Python",

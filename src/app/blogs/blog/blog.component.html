@@ -1,37 +1,71 @@
-<div class="single-blog-post mt-50">
-    <div class="blog-thumb">
-        <img src="{{ blog?.image }}" class="blog-image" alt="Blog Details">
-    </div>
-    <div class="blog-content">
-        <h3 class="blog-title">{{ blog?.title }}</h3>
-        <ul class="meta">
-            <li>
-                <a href="#"><i class="lni-calendar"></i>{{ blog?.publish_date | date: 'longDate'}}</a>
-            </li>
-            <!-- <li><a href="#"><i class="lni-heart"></i> 50 Likes</a></li>
-            <li><a href="#"><i class="lni-comment"></i> 25 Comments</a></li> -->
-        </ul>
-        <p class="pt-15">{{ blog?.description }}</p>
-    </div>
-    <div class="blog-tag-share pt-15 pb-25 d-sm-flex align-items-center justify-content-between">
-        <div class="blog-tag pt-10 d-flex align-items-center">
-            <span>tag:</span>
-            <ul class="tag" *ngFor="let category of blog?.categories">
-                <li><a href="#">{{ category }}</a></li>
-            </ul>
-        </div>
-        <div class="blgo-share pt-10 d-flex align-items-center">
-            <span>share:</span>
-            <ul class="share">
-                <li><a class="color-1" href="#"><i class="lni-facebook-filled"></i></a></li>
-                <li><a class="color-2" href="#"><i class="lni-twitter-original"></i></a></li>
-                <li><a class="color-3" href="#"><i class="lni-google-plus"></i></a></li>
-                <li><a class="color-4" href="#"><i class="lni-instagram-original"></i></a></li>
-            </ul>
+<header class="header-area">
+    <div class="page-banner bg_cover" style="background-image: url(../assets/images/post-banner.jpg)" data-overlay="2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-banner-content text-center">
+                        <h2 class="page-title">Blog Post</h2>
+                        <ul class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+                            <li class="breadcrumb-item">Blog Post</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- <div class="blog-comment">
-        <app-comments></app-comments>
-        <app-create-comment></app-create-comment>
-    </div> -->
-</div>
+</header>
+
+<section id="blog" class="single-blog-page pt-80 pb-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="single-blog-post mt-50">
+                    <div class="blog-thumb">
+                        <img src="{{ blog?.image }}" class="blog-image" alt="Blog Details">
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">{{ blog?.title }}</h3>
+                        <ul class="meta">
+                            <li>
+                                <a href="#"><i class="lni-calendar"></i>{{ blog?.publish_date | date: 'longDate'}}</a>
+                            </li>
+                            <!-- <li><a href="#"><i class="lni-heart"></i> 50 Likes</a></li>
+                            <li><a href="#"><i class="lni-comment"></i> 25 Comments</a></li> -->
+                        </ul>
+                        <p class="pt-15">{{ blog?.description }}</p>
+                    </div>
+                    <div class="blog-tag-share pt-15 pb-25 d-sm-flex align-items-center justify-content-between">
+                        <div class="blog-tag pt-10 d-flex align-items-center">
+                            <span>tag:</span>
+                            <ul class="tag" *ngFor="let category of blog?.categories">
+                                <li><a href="#">{{ category }}</a></li>
+                            </ul>
+                        </div>
+                        <div class="blgo-share pt-10 d-flex align-items-center">
+                            <span>share:</span>
+                            <ul class="share">
+                                <li><a class="color-1" href="#"><i class="lni-facebook-filled"></i></a></li>
+                                <li><a class="color-2" href="#"><i class="lni-twitter-original"></i></a></li>
+                                <li><a class="color-3" href="#"><i class="lni-google-plus"></i></a></li>
+                                <li><a class="color-4" href="#"><i class="lni-instagram-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="blog-comment">
+                        <app-comments></app-comments>
+                        <app-create-comment></app-create-comment>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-sidebar">
+                    <app-sidebar-search></app-sidebar-search>
+                    <app-sidebar-blogs></app-sidebar-blogs>
+                    <app-sidebar-category></app-sidebar-category>
+                    <app-sidebar-subscribe></app-sidebar-subscribe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

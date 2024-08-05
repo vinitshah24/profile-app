@@ -1,3 +1,84 @@
+.page-banner {
+    margin-top: 95px;
+    padding-top: 118px;
+    padding-bottom: 122px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-banner {
+        padding-top: 88px;
+        padding-bottom: 92px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-banner {
+        padding-top: 73px;
+        padding-bottom: 72px;
+    }
+}
+
+.page-banner-content {
+    position: relative;
+    z-index: 9;
+}
+
+.page-banner-content .page-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .page-banner-content .page-title {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-banner-content .page-title {
+        font-size: 38px;
+    }
+}
+
+.page-banner-content .breadcrumb {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.page-banner-content .breadcrumb .breadcrumb-item {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 26px;
+}
+
+.page-banner-content .breadcrumb .breadcrumb-item a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.page-banner-content .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    left: 7px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-blog-page {
         padding-top: 70px;

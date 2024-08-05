@@ -5,16 +5,16 @@ import { RouterLink } from '@angular/router';
 import { BlogsService } from '../../services/blogs.service';
 
 @Component({
-  selector: 'app-latest-blogs',
+  selector: 'app-sidebar-blogs',
   standalone: true,
   imports: [
     CommonModule,
     RouterLink,
   ],
-  templateUrl: './latest-blogs.component.html',
-  styleUrl: './latest-blogs.component.css'
+  templateUrl: './sidebar-blogs.component.html',
+  styleUrl: './sidebar-blogs.component.css'
 })
-export class LatestBlogsComponent {
+export class SidebarBlogsComponent {
 
   blogs?: {
     id: number,

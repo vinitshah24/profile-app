@@ -2,7 +2,8 @@
     <h4 class="sidebar-title pb-10">Catagories</h4>
     <ul *ngFor="let category of categories | keyvalue">
         <li>
-            <a [routerLink]="['/blogs', 'categories', category.key]">{{ category.key | titlecase }}
+            <a [routerLink]="['/blogs', 'search']" [queryParams]="{category: category.key}">
+                {{ category.key | titlecase }}
                 <span>({{ category.value }})</span>
             </a>
         </li>

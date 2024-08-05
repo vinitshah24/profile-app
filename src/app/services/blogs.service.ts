@@ -21,8 +21,6 @@ export class BlogsService {
     }
 
     getBlogById(id: number) {
-        console.log(`Blog ID: ${id}`);
-        console.log(this.blogsData.items.filter(x => x.id == id).at(0));
         return this.blogsData.items.filter(x => x.id == id).at(0);
     }
 
@@ -65,5 +63,10 @@ export class BlogsService {
         return this.blogsData.items.filter(blog =>
             blog.categories.includes(category.toLowerCase())
         );
+    }
+
+    getBlogsByTitle(searchTerm: string) {
+        if (!searchTerm) return this.blogsData.items;
+        return this.blogsData.items.filter(blog => blog.title.toLowerCase().includes(searchTerm.toLowerCase()));
     }
 }

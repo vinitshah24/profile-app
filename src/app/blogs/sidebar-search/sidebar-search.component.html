@@ -1,0 +1,20 @@
+<div class="sidebar-search mt-50">
+    <form id="subscription-form" [formGroup]="searchForm" (ngSubmit)="search()">
+
+        <div class="col single-form">
+            <input type="text" formControlName="searchTerm" class="form-control input-txt" placeholder="Search Term"
+                aria-label="Search Term">
+            <div *ngIf="searchForm.get('searchTerm')?.invalid &&
+                (searchForm.get('searchTerm')?.dirty || searchForm.get('searchTerm')?.touched)">
+                <small class="text-danger ml-4 mt-2" *ngIf="searchForm.get('searchTerm')?.hasError('required')">
+                    This field is required.
+                </small>
+            </div>
+        </div>
+
+        <button [disabled]="searchForm.invalid" type="submit">
+            <i class="lni-search"></i>
+        </button>
+
+    </form>
+</div>

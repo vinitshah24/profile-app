@@ -1,10 +1,10 @@
-.blog-sidebar .sidebar-category {
+.sidebar-category {
     padding: 25px 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.blog-sidebar .sidebar-category ul li a {
+.sidebar-category ul li a {
     display: block;
     font-size: 16px;
     color: #8a8fa3;
@@ -16,10 +16,10 @@
     transition: all 0.3s ease-out 0s;
 }
 
-.blog-sidebar .sidebar-category ul li a span {
+.sidebar-category ul li a span {
     float: right;
 }
 
-.blog-sidebar .sidebar-category ul li a:hover {
+.sidebar-category ul li a:hover {
     color: #754ef9;
 }

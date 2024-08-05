@@ -8,8 +8,8 @@ import { PricingComponent } from './pricing/pricing.component';
 import { BlogsComponent } from "./blogs/blogs.component";
 import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component'
-import { BlogCategoriesListComponent } from './blogs/blog-categories-list/blog-categories-list.component';
-import { BlogDetailsComponent } from './blogs/blog-details/blog-details.component';
+import { BlogSearchComponent } from './blogs/blog-search/blog-search.component';
+import { BlogComponent } from './blogs/blog/blog.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to `home`
@@ -20,8 +20,8 @@ export const routes: Routes = [
     { path: 'portfolio', component: PortfolioComponent },
     { path: 'pricing', component: PricingComponent },
     { path: 'blogs', component: BlogsComponent },
-    { path: 'blogs/:id', component: BlogDetailsComponent },
-    { path: 'blogs/categories/:category', component: BlogCategoriesListComponent },
+    { path: 'blogs/search', component: BlogSearchComponent },
+    { path: 'blogs/:id', component: BlogComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'error', component: ErrorComponent },
     { path: '**', component: ErrorComponent },  // Wildcard route for a 404 page
