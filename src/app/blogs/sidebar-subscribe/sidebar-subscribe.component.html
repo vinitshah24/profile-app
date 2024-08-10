@@ -1,4 +1,6 @@
 <div class="sidebar-subscribe mt-50">
+    <app-alert [message]="alertMessage" [alertType]="alertType" *ngIf="alertMessage" (close)="onHandleAlert()">
+    </app-alert>
     <h4 class="sidebar-title pb-10">Subscribe</h4>
     <div class="subscribe-form mt-15">
         <form id="subscription-form" [formGroup]="subscriptionForm" (ngSubmit)="subscribe(subscriptionForm.value)">
@@ -20,5 +22,3 @@
         </form>
     </div>
 </div>
-
-<app-popup></app-popup>

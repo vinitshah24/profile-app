@@ -4,84 +4,84 @@ export const blogs = {
     items: [
         {
             id: 1,
-            title: "Spark Internals",
-            description: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.",
+            title: "Unlocking Peak Performance in Apache Spark",
+            description: "assets/blogs/spark_performance/data.md",
             publish_date: new Date("01/02/2024"),
-            thumbnail: "../assets/images/blog/spark.jpg",
+            thumbnail: "../assets/blogs/hadoop_spark/spark.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
-            categories: ["spark", "big data"]
+            categories: ["spark"]
         },
         {
             id: 2,
-            title: "MapReduce Functionality",
-            description: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.",
+            title: "Understanding Apache Spark Architecture",
+            description: "assets/blogs/spark_architecture/data.md",
             publish_date: new Date("05/25/2024"),
-            thumbnail: "../assets/images/blog/hadoop.jpg",
+            thumbnail: "../assets/blogs/hadoop_spark/spark.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
-            categories: ["hadoop", "big data"]
+            categories: ["spark"]
         },
         {
             id: 3,
-            title: "Spark Live Streaming",
-            description: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.",
+            title: "Getting Started with Apache Livy",
+            description: "assets/blogs/livy_intro/data.md",
             publish_date: new Date(),
-            thumbnail: "../assets/images/blog/spark.jpg",
+            thumbnail: "../assets/blogs/livy_intro/livy.png",
             image: "../assets/images/blog/blog-details/data.jpg",
-            categories: ["streaming"]
+            categories: ["livy", "spark"]
         },
         {
             id: 4,
-            title: "Spark Accumulators",
-            description: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.",
+            title: "Unlocking Spark's Performance: A Guide to Broadcast Hash Join",
+            description: "assets/blogs/spark_broadcast_join/data.md",
             publish_date: new Date("04/05/2024"),
-            thumbnail: "../assets/images/blog/spark.jpg",
+            thumbnail: "../assets/blogs/hadoop_spark/spark.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
-            categories: ["spark", "big data"]
+            categories: ["spark"]
         },
         {
             id: 5,
-            title: "Hadoop Applications",
-            description: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.",
+            title: "Understanding Compaction in HBase",
+            description: "assets/blogs/hbase_compaction/data.md",
             publish_date: new Date("03/23/2024"),
-            thumbnail: "../assets/images/blog/hadoop.jpg",
+            thumbnail: "../assets/blogs/hbase_compaction/hbase.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
-            categories: ["big data"]
+            categories: ["hbase", "hadoop"]
         },
         {
             id: 6,
-            title: "Spark Kafka Streaming",
-            description: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.",
+            title: "Understanding Kafka: The Backbone of Modern Data Streaming",
+            description: "assets/blogs/kafka_intro/data.md",
             publish_date: new Date("05/20/2024"),
-            thumbnail: "../assets/images/blog/spark.jpg",
+            thumbnail: "../assets/blogs/kafka_intro/kafka.svg",
             image: "../assets/images/blog/blog-details/data.jpg",
             categories: ["streaming", "kafka"]
         },
         {
             id: 7,
-            title: "Spark Architecture",
-            description: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.",
+            title: "Exploring MapReduce: The Powerhouse of Big Data Processing",
+            description: "assets/blogs/mapreduce_intro/data.md",
             publish_date: new Date("02/10/2024"),
-            thumbnail: "../assets/images/blog/spark.jpg",
+            thumbnail: "../assets/blogs/mapreduce_intro/hadoop.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
-            categories: ["big data", "spark"]
+            categories: ["map-reduce", "hadoop"]
         },
         {
             id: 8,
-            title: "HBase Internals",
-            description: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.",
+            title: "Mastering Workflow Orchestration with Apache Airflow",
+            description: "assets/blogs/airflow_intro/data.md",
             publish_date: new Date("03/12/2024"),
-            thumbnail: "../assets/images/blog/hadoop.jpg",
+            thumbnail: "../assets/blogs/airflow_intro/airflow.png",
             image: "../assets/images/blog/blog-details/data.jpg",
-            categories: ["hbase", "big data"]
+            categories: ["airflow"]
         },
         {
             id: 9,
-            title: "Spark Remote Execution using Livy",
-            description: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.",
+            title: "Integrating Hadoop and Spark: Writing Data to Hive",
+            description: "assets/blogs/hadoop_spark/data.md",
             publish_date: new Date(),
-            thumbnail: "../assets/images/blog/spark.jpg",
+            thumbnail: "../assets/blogs/hadoop_spark/spark.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
-            categories: ["livy", "spark", "big data"]
+            categories: ["hadoop", "spark", "hive"]
         },
     ]
 }

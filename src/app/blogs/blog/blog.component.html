@@ -16,30 +16,37 @@
     </div>
 </header>
 
-<section id="blog" class="single-blog-page pt-80 pb-130">
+<section id="blog" class="single-blog-page pt-30 pb-130">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <div class="single-blog-post mt-50">
-                    <div class="blog-thumb">
+                <div class="single-blog-post mt-20">
+                    <!-- <div class="blog-thumb">
                         <img src="{{ blog?.image }}" class="blog-image" alt="Blog Details">
-                    </div>
+                    </div> -->
                     <div class="blog-content">
                         <h3 class="blog-title">{{ blog?.title }}</h3>
                         <ul class="meta">
                             <li>
-                                <a href="#"><i class="lni-calendar"></i>{{ blog?.publish_date | date: 'longDate'}}</a>
+                                <a href=""><i class="lni-calendar"></i>{{ blog?.publish_date | date: 'longDate'}}</a>
                             </li>
                             <!-- <li><a href="#"><i class="lni-heart"></i> 50 Likes</a></li>
                             <li><a href="#"><i class="lni-comment"></i> 25 Comments</a></li> -->
                         </ul>
-                        <p class="pt-15">{{ blog?.description }}</p>
+                        <br />
+                        <div class="markdown-content">
+                            <markdown src="{{ blog?.description }}"> </markdown>
+                        </div>
                     </div>
                     <div class="blog-tag-share pt-15 pb-25 d-sm-flex align-items-center justify-content-between">
                         <div class="blog-tag pt-10 d-flex align-items-center">
                             <span>tag:</span>
                             <ul class="tag" *ngFor="let category of blog?.categories">
-                                <li><a href="#">{{ category }}</a></li>
+                                <li>
+                                    <a [routerLink]="['/blogs', 'search']" [queryParams]="{category: category}">
+                                        {{ category }}
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="blgo-share pt-10 d-flex align-items-center">

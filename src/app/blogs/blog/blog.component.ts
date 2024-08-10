@@ -1,7 +1,9 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, SecurityContext } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MarkdownModule } from 'ngx-markdown';
+
 import { BlogsService } from '../../services/blogs.service';
 import { Subscription } from 'rxjs';
 import { CommentsComponent } from './comments/comments.component';
@@ -11,11 +13,14 @@ import { SidebarSubscribeComponent } from '../sidebar-subscribe/sidebar-subscrib
 import { SidebarCategoryComponent } from '../sidebar-category/sidebar-category.component';
 import { SidebarSearchComponent } from '../sidebar-search/sidebar-search.component';
 
+
 @Component({
   selector: 'app-blog-details',
   standalone: true,
   imports: [
+    RouterLink,
     RouterOutlet,
+    MarkdownModule,
     SidebarSubscribeComponent,
     SidebarCategoryComponent,
     SidebarBlogsComponent,
@@ -41,9 +46,7 @@ export class BlogComponent {
 
   private routeSub: Subscription | undefined;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, private blogsService: BlogsService) {
-
-  }
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, private blogsService: BlogsService) { }
 
   ngOnInit() {
     this.getBlogResource()

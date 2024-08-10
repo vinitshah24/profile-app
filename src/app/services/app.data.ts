@@ -13,10 +13,10 @@ export const configuration = {
         },
         username: "Vinit Shah",
         description: "A Freelance Full Stack Developer",
-        image: "assets/images/banner/hero.png",
+        image: "assets/images/banner/profile.jpg",
         socialLinks: {
-            facebook: "https://www.facebook.com/",
-            twitter: "https://x.com/",
+            facebook: "https://www.facebook.com/vinit.shah02/",
+            twitter: "https://x.com/vinnitshah",
             linkedin: "https://linkedin.com/in/vinitshah24"
         }
     },
@@ -72,43 +72,49 @@ export const configuration = {
                 title: "Frontend Development",
                 icon: "lni-code-alt",
                 link: "",
-                details: "Get the beautiful and fully functional single page frontend applications"
+                details: `Transform your vision into stunning single-page applications with
+                intuitive user interfaces and seamless interactions. My frontend development services ensure a
+                visually appealing and fully functional experience across all devices.`
             },
             {
                 title: "Backend Development",
                 icon: "lni-website",
                 link: "",
-                details: "Fully working backend API development with the database integration"
+                details: `Build robust and scalable backend solutions tailored to your needs. From designing
+                comprehensive APIs to integrating with databases, I provide end-to-end backend development
+                that powers your applications with reliability and efficiency.`
             },
             {
                 title: "Consultancy and Support",
                 icon: "lni-support",
                 link: "",
-                details: "Consultancy and support for the architectural design for the Big data projects"
+                details: `Leverage expert guidance for designing and optimizing large-scale data systems.
+                I offer specialized consultancy and support for architectural designs and implementations for the projects,
+                ensuring strategic solutions that drive growth and innovation.`
             }
         ]
     },
     portfolio: {
-        heading: "My Recent Works",
+        heading: "My Work Portfolio",
         description: `
             Below are some of the projects that I have developed for demonstrating my knowledge in the different areas.
         `,
-        projectLink: "",
+        projectLink: "https://github.com/vinitshah24",
         projects: [
             {
                 title: "Django REST API",
-                image: "assets/images/work/w-1.jpg",
-                link: ""
+                image: "assets/images/work/w-1.png",
+                link: "https://github.com/vinitshah24/eCommerce-API"
             },
             {
-                title: "Machine Learning",
-                image: "assets/images/work/w-1.jpg",
-                link: ""
+                title: "Home Credit Default Risk Assessment",
+                image: "assets/images/work/w-2.png",
+                link: "https://github.com/vinitshah24/Home-Credit-Default-Risk-Assessment"
             },
             {
-                title: "Angular Website",
-                image: "assets/images/work/w-1.jpg",
-                link: ""
+                title: "Emotions Detection from Social Media Posts",
+                image: "assets/images/work/w-3.png",
+                link: "https://github.com/vinitshah24/Emotions-Detection-Text-RNN"
             }
         ]
     },
@@ -124,9 +130,9 @@ export const configuration = {
         logo: "assets/images/logo-2.png",
         description: "Feel free to connect with me on my below social media accounts",
         socialLinks: {
-            facebook: "",
-            twitter: "",
-            linkedin: ""
+            facebook: "https://www.facebook.com/vinit.shah02/",
+            twitter: "https://x.com/vinnitshah",
+            linkedin: "https://linkedin.com/in/vinitshah24"
         }
     },
     error: {

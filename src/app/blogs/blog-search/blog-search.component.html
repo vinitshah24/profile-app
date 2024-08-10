@@ -5,7 +5,7 @@
                 <h2 class="title">Search Results:</h2>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-5 col-md-8 col-sm-9" *ngFor="let blog of pages">
+                        <div class="col-lg-6 col-md-8 col-sm-9" *ngFor="let blog of pages">
                             <div class="single-blog mt-30">
                                 <div class="blog-image">
                                     <img src="../../{{ blog.thumbnail }}" alt="Blog">
@@ -13,7 +13,7 @@
                                 <div class="blog-content">
                                     <h4 class="blog-title">
                                         <a [routerLink]="['/blogs', blog.id]">
-                                            {{ (blog.title.length > 25) ? (blog.title | slice:0:25) + '...' :
+                                            {{
                                             (blog.title) }}
                                         </a>
                                     </h4>
