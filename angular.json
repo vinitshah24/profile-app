@@ -16,7 +16,8 @@
             "allowedCommonJsDependencies": [
               "jquery",
               "parallax-js"
-           ],
+            ],
+            "baseHref": "/profile-app/",
             "outputPath": "dist/profile-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -120,6 +121,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
