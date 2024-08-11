@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubscribeBlogComponent } from './subscribe-blog.component';
+import { SidebarSubscribeComponent } from './sidebar-subscribe.component';
 
-describe('SubscribeBlogComponent', () => {
-  let component: SubscribeBlogComponent;
-  let fixture: ComponentFixture<SubscribeBlogComponent>;
+describe('SidebarSubscribeComponent', () => {
+  let component: SidebarSubscribeComponent;
+  let fixture: ComponentFixture<SidebarSubscribeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SubscribeBlogComponent]
+      imports: [SidebarSubscribeComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SubscribeBlogComponent);
+    fixture = TestBed.createComponent(SidebarSubscribeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

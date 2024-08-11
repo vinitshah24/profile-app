@@ -32,23 +32,23 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
+    // if (isPlatformBrowser(this.platformId)) {
 
-      $(document).ready(() => {
+    //   $(document).ready(() => {
 
-        if ($('.progress-line').length) {
-          $('.progress-line').appear(() => {
-            var el = $(this);
-            var percent = el.data('width');
-            $(el).css('width', percent + '%');
-          }, { accY: 0 });
-        }
+    //     if ($('.progress-line').length) {
+    //       $('.progress-line').appear(() => {
+    //         var el = $(this);
+    //         var percent = el.data('width');
+    //         $(el).css('width', percent + '%');
+    //       }, { accY: 0 });
+    //     }
 
-        $('.counter').counterUp({
-          delay: 10,
-          time: 1000
-        });
-      });
-    }
+    //     $('.counter').counterUp({
+    //       delay: 10,
+    //       time: 1000
+    //     });
+    //   });
+    // }
   }
 }

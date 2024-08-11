@@ -1,0 +1,14 @@
+{
+  "routes": [
+    "/about",
+    "/blogs",
+    "/blogs/search",
+    "/collab",
+    "/contact",
+    "/error",
+    "/home",
+    "/portfolio",
+    "/pricing",
+    "/services"
+  ]
+}

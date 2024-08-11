@@ -15,7 +15,7 @@ export const blogs = {
             id: 2,
             title: "Understanding Apache Spark Architecture",
             description: "assets/blogs/spark_architecture/data.md",
-            publish_date: new Date("05/25/2024"),
+            publish_date: new Date("02/24/2024"),
             thumbnail: "../assets/blogs/hadoop_spark/spark.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
             categories: ["spark"]
@@ -24,7 +24,7 @@ export const blogs = {
             id: 3,
             title: "Getting Started with Apache Livy",
             description: "assets/blogs/livy_intro/data.md",
-            publish_date: new Date(),
+            publish_date: new Date("03/15/2024"),
             thumbnail: "../assets/blogs/livy_intro/livy.png",
             image: "../assets/images/blog/blog-details/data.jpg",
             categories: ["livy", "spark"]
@@ -42,7 +42,7 @@ export const blogs = {
             id: 5,
             title: "Understanding Compaction in HBase",
             description: "assets/blogs/hbase_compaction/data.md",
-            publish_date: new Date("03/23/2024"),
+            publish_date: new Date("05/23/2024"),
             thumbnail: "../assets/blogs/hbase_compaction/hbase.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
             categories: ["hbase", "hadoop"]
@@ -51,7 +51,7 @@ export const blogs = {
             id: 6,
             title: "Understanding Kafka: The Backbone of Modern Data Streaming",
             description: "assets/blogs/kafka_intro/data.md",
-            publish_date: new Date("05/20/2024"),
+            publish_date: new Date("06/20/2024"),
             thumbnail: "../assets/blogs/kafka_intro/kafka.svg",
             image: "../assets/images/blog/blog-details/data.jpg",
             categories: ["streaming", "kafka"]
@@ -60,7 +60,7 @@ export const blogs = {
             id: 7,
             title: "Exploring MapReduce: The Powerhouse of Big Data Processing",
             description: "assets/blogs/mapreduce_intro/data.md",
-            publish_date: new Date("02/10/2024"),
+            publish_date: new Date("07/10/2024"),
             thumbnail: "../assets/blogs/mapreduce_intro/hadoop.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
             categories: ["map-reduce", "hadoop"]
@@ -69,7 +69,7 @@ export const blogs = {
             id: 8,
             title: "Mastering Workflow Orchestration with Apache Airflow",
             description: "assets/blogs/airflow_intro/data.md",
-            publish_date: new Date("03/12/2024"),
+            publish_date: new Date("08/02/2024"),
             thumbnail: "../assets/blogs/airflow_intro/airflow.png",
             image: "../assets/images/blog/blog-details/data.jpg",
             categories: ["airflow"]
@@ -78,7 +78,7 @@ export const blogs = {
             id: 9,
             title: "Integrating Hadoop and Spark: Writing Data to Hive",
             description: "assets/blogs/hadoop_spark/data.md",
-            publish_date: new Date(),
+            publish_date: new Date("08/12/2024"),
             thumbnail: "../assets/blogs/hadoop_spark/spark.jpg",
             image: "../assets/images/blog/blog-details/data.jpg",
             categories: ["hadoop", "spark", "hive"]
