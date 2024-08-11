@@ -2,7 +2,7 @@ import { Component, ViewChild } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { Router } from "@angular/router";
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators, NgForm, FormControl } from "@angular/forms";
-import { AlertComponent } from "../../alert/alert.component";
+import { AlertComponent } from "../alert/alert.component";
 
 @Component({
   selector: "app-sidebar-subscribe",
